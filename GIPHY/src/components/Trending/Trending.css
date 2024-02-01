@@ -1,0 +1,33 @@
+.trending {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px;
+    padding-bottom: 3vh;
+}
+
+.trending img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: darkblue 1px solid;
+}
+
+.trend {
+    margin: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.trend h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

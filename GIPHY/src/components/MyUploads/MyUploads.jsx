@@ -1,7 +1,7 @@
 const MyUploads = () => {
     return (
         <div>
-            <h1>MyUploads</h1>
+            <h1>My Uploads</h1>
         </div>
     );
 };
