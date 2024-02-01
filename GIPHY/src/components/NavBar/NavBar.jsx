@@ -2,7 +2,17 @@ import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
-    <NavLink to="/">Trending</NavLink>
+    return (
+        <div className='nav-link'>
+
+            <NavLink to="/">Trending</NavLink>
+            <NavLink to="/favorites">Favorites</NavLink>
+            <NavLink to="/myuploads">My Uploads</NavLink>
+            <NavLink to="/upload">Upload</NavLink>
+            
+            
+        </div>
+    )
 }
 
 export default NavBar;
