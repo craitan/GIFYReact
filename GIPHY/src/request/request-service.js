@@ -59,8 +59,10 @@ export const loadSearchGifs = async (searchTerm, limit = 25) => {
 export const loadSingleGif = async (id) => {
     const data = await fetch(GET_GIF_BY_ID(id));
 
+
     if (data.ok) {
         const response = await data.json();
+        console.log(response.data)
         return response.data;
     } else {
         return 'Unsuccessful operation! From loadSingleGif function.';
