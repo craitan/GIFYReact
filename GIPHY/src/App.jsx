@@ -7,6 +7,7 @@ import Favorites from './components/Favorites/Favorites'
 import MyUploads from './components/MyUploads/MyUploads'
 import Upload from './components/Upload/Upload'
 import NavBar from './components/NavBar/NavBar'
+import GifDetails from './components/Views/GifDetails'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="favorites" element={<Favorites />} />
           <Route path="upload" element={<Upload />} />
           <Route path="myuploads" element={<MyUploads />} />
+          <Route path="details/:id" element={<GifDetails />} />
         </Routes>
       </BrowserRouter>
       <Footer />

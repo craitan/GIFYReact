@@ -1,20 +1,22 @@
 import PropTypes from 'prop-types';
 
-import { useState } from 'react';
+// import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Gif = ({ gif }) => {
-    const [clicked, setClicked] = useState(false)
+    const navigate = useNavigate();
+    // const [clicked, setClicked] = useState(false)
 
-    const handleClick = () => {
+    // const handleClick = () => {
 
-        setClicked(!clicked)
+    //     setClicked(!clicked)
 
-    };
+    // };
 
     return (
         <>
             <div className='single-gif'>
-                <img onClick={handleClick} src={gif.images.fixed_width.url} alt={gif.title} />
+                <img onClick={() => navigate(`/details/${gif.id}`)} src={gif.images.fixed_width.url} alt={gif.title} />
             </div>
         </>
     )
